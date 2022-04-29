@@ -14,13 +14,13 @@ public class Utils {
         return list;
     }
 
-    public static List<ProductDetail> NonNullsValues(List<ProductDetail> nullList) {
-       List<ProductDetail> finalList = new ArrayList();
+    public static List<ProductDetail> NonNullValues(List<ProductDetail> nullList) {
+       List<ProductDetail> list = new ArrayList();
         for (ProductDetail pd : nullList) {
             if (pd != null) {
-                finalList.add(pd);
+                list.add(pd);
             }
         }
-        return finalList;
+        return list;
     }
 }

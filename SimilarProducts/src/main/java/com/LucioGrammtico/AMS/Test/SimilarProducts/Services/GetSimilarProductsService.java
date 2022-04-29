@@ -24,7 +24,7 @@ public class GetSimilarProductsService {
     public List<ProductDetail> GetSimilarProducts(String productId) throws Exception {
         try {
             SimilarProduct similarProducts = GetSimilarIds(productId);
-            return Utils.NonNullsValues(GetDetails(similarProducts));
+            return Utils.NonNullValues(GetDetails(similarProducts));
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
