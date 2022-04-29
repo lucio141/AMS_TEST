@@ -28,7 +28,7 @@ private final GetSimilarProductsService service;
         try {
 return ResponseEntity.status(HttpStatus.OK).body(service.GetSimilarProducts(productId));
         } catch (Exception e) {
-return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not Found");
+return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product Not found");
         }
     }
 }
